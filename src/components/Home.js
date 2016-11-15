@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
+import List from './List'
 
 class Home extends Component {
     constructor(props) {
       super(props);
       this.state = {date: new Date(), isToggleOn: 'OFF'};
-
       this.handleClick = this.handleClick.bind(this);
     }
 
@@ -33,6 +33,7 @@ class Home extends Component {
         return (
             <div>
               <h2>Home</h2>
+              <List list={[1,2,3,4,5,6]} />
               <p>It is { this.state.date.toLocaleTimeString() } </p>
               <button onClick={this.handleClick}>
                 {this.state.isToggleOn ? 'ON' : 'OFF'}

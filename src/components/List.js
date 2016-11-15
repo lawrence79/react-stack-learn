@@ -8,8 +8,10 @@ class List extends Component {
             <li key = { number.toString() } > { number } </li>
         )
 
-        return ( <div>
-            <ul> { mappedList } </ul> </div>
+        return (
+            <div>
+              <ul> { mappedList } </ul>
+            </div>
         )
     }
 }

@@ -4,8 +4,8 @@ class List extends Component {
     render() {
 
         const {list} = this.props
-        const mappedList = list.map((number) =>
-            <li key = { number.toString() } > { number } </li>
+        const mappedList = list.map((number, index) =>
+            <li key = { index } > { number } </li>
         )
 
         return (

@@ -5,7 +5,7 @@ class About extends Component {
 
     render() {
 
-        const list = [1, 2, 3, 4, 5]
+        const numbers = [1, 2, 3, 4, 5]
 
         return (
             <div>
